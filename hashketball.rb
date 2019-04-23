@@ -254,7 +254,7 @@ def most_points_scored
     c = game_hash[:home][:players][player][:points].to_i
     if c > a
       a = c
-      b = "loopidy"
+      b = player
     end
   end
   
