@@ -276,6 +276,7 @@ def winning_team
   game_hash[:home][:players].each do |key , val|
     if key == :points
       a += val.to_i
+    else next
     end
   end
   
