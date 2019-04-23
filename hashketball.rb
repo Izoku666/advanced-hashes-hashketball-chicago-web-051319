@@ -247,4 +247,9 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  a = 0 # score info
+  b = "" # player info
+  
+  game_hash[:home][:player].each do |player , info|
+    
 end
