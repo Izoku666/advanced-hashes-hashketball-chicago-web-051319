@@ -319,7 +319,6 @@ def long_name_steals_a_ton?
   a = 0 # steals
   b = "Unchanging as the night sky" #player name
   c = player_with_longest_name
-  puts c
   
   game_hash[:home][:players].each do |player , info|
     info.each do |infoKey , val|
@@ -343,6 +342,7 @@ def long_name_steals_a_ton?
     end
   end
   
+  puts "A: #{a} , B: #{b}"
   
   if c == b
     return true
