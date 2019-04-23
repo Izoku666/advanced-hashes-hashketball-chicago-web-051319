@@ -278,4 +278,12 @@ def winning_team
       a += val.to_i
     end
   end
+  
+  game_hash[:away][:players].each do |key , val|
+    if key == :points
+      b += val_to_i
+    end
+  end
+  
+  a > b ? return game_hash[:home][:team_name] : return game_hash[:away][:team_name]
 end
