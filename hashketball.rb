@@ -250,6 +250,11 @@ def most_points_scored
   a = 0 # score info
   b = "" # player info
   
-  game_hash[:home][:player].each do |player , info|
-    
+  game_hash[:home][:players].each do |player , info|
+    c = game_hash[:home][:players][player][:points].to_i
+    if c > a
+      a = c
+      b = player
+    end
+  end
 end
