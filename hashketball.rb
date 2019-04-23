@@ -314,3 +314,14 @@ def player_with_longest_name
   
   return a
 end
+
+def long_name_steals_a_ton?
+  a = 0 # steals
+  b = "" player name
+  
+  
+  if player_with_longest_name == a
+    return true
+  else
+    return false
+end
