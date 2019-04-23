@@ -285,5 +285,8 @@ def winning_team
     end
   end
   
-  a > b ? return game_hash[:home][:team_name] : return game_hash[:away][:team_name]
+  if a > b
+    return game_hash[:home][:team_name]
+  else
+    return game_hash[:away][:team_name]
 end
