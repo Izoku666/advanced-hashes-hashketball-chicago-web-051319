@@ -319,8 +319,28 @@ def long_name_steals_a_ton?
   a = 0 # steals
   b = "" player name
   
+  game_hash[:home][:players].each do |player , info|
+    info.each do |infoKey , val|
+      if infoKey == :steals
+        if val > a
+          a = val
+          b = player
+        end
+      end
+    end
+  end
   
-  if player_with_longest_name == a
+  game_hash[:away][:players].each do |player , info|
+    info.each do |infoKey , val|
+      if infoKey == :steals
+        a = val
+        b = player
+      end
+    end
+  end
+  
+  
+  if player_with_longest_name == b
     return true
   else
     return false
