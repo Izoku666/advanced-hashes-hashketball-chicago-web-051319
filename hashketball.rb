@@ -258,5 +258,13 @@ def most_points_scored
     end
   end
   
+  game_hash[:away][:players].each do |player , info|
+    c = game_hash[:away][:players][player][:points].to_i
+    if c > a
+      a = c
+      b = player
+    end
+  end
+  
   return b
 end
