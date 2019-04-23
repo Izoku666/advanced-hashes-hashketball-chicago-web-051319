@@ -285,6 +285,7 @@ def winning_team
     end
   end
   
+  puts "A: #{a} , B: #{b}"
   if a > b
     return game_hash[:home][:team_name]
   else
