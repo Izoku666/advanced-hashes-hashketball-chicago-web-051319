@@ -344,7 +344,7 @@ def long_name_steals_a_ton?
   end
   
   
-  if player_with_longest_name == b
+  if c == b
     return true
   else
     return false
