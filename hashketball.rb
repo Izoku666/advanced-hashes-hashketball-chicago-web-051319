@@ -257,4 +257,6 @@ def most_points_scored
       b = "loopidy"
     end
   end
+  
+  return b
 end
