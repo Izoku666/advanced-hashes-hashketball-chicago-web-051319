@@ -244,7 +244,7 @@ def big_shoe_rebounds
   else
     "B ain't here"
   end
-  
 end
 
-
+def most_points_scored
+end
