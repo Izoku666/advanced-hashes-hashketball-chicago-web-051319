@@ -330,6 +330,8 @@ def long_name_steals_a_ton?
     end
   end
   
+  puts a
+  
   game_hash[:away][:players].each do |player , info|
     info.each do |infoKey , val|
       if infoKey == :steals
