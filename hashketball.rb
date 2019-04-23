@@ -274,7 +274,7 @@ def winning_team
   b = 0 # away team score
   
   game_hash[:home][:players].each do |player , info|
-    player.each do |infoKey , val|
+    info.each do |infoKey , val|
       if infoKey == :points
         a += val.to_i
       end
