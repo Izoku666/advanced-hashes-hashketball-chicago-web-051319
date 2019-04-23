@@ -297,7 +297,7 @@ def winning_team
   end
 end
 
-def player_with_the_longest_name
+def player_with_longest_name
   a = ""
   
   game_hash[:home][:players].each do |player , info|
