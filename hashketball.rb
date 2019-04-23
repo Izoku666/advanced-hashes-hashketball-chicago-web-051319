@@ -330,7 +330,7 @@ def long_name_steals_a_ton?
     end
   end
   
-  puts player_with_longest_name
+  
   
   game_hash[:away][:players].each do |player , info|
     info.each do |infoKey , val|
