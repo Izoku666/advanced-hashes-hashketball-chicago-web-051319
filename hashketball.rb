@@ -273,16 +273,19 @@ def winning_team
   a = 0 # home team score
   b = 0 # away team score
   
-  game_hash[:home][:players].each do |key , val|
-    if key == :points
-      a += val.to_i
-    else next
+  game_hash[:home][:players].each do |player , info|
+    player.each do |infoKey , val|
+      if infoKey == :points
+        a += val.to_i
+      end
     end
   end
   
-  game_hash[:away][:players].each do |key , val|
-    if key == :points
-      b += val_to_i
+  game_hash[:away][:players].each do |player , info|
+    player.each do |infoKey , val|
+      if infoKey == :points
+        b += val.to_i
+      end
     end
   end
   
