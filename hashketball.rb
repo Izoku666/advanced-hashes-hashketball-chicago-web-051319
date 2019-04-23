@@ -317,7 +317,7 @@ end
 
 def long_name_steals_a_ton?
   a = 0 # steals
-  b = "" player name
+  b = "" #player name
   
   game_hash[:home][:players].each do |player , info|
     info.each do |infoKey , val|
